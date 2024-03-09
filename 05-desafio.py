@@ -1,10 +1,7 @@
-aluno = "Joao"
-disciplina = "Computaria"
+segunda = int(input("voce trabalhou na segunda?:"))
+quarta = int(input("voce trabalhou na quarta?:"))
+sexta = int(input("voce trabalhou na sexta?:"))
 
-nota1 = float(input("Digite a nota 1:"))
-nota2 = float(input("Digite a nota 2:"))
-
-media = (nota1 + nota2) /2
-
-print(" a média de" ,aluno, " é igual a", media, "na disciplina", disciplina)
+tv55 = bool(segunda) and bool(quarta) and bool(sexta)
+print(f"João pode comprar uma tv 55? {tv55}")
 
