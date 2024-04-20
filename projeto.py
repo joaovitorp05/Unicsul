@@ -24,7 +24,28 @@ def decimal_para_binario(decimal):
         resto = decimal % 2
         binario = str(resto) + binario
         decimal = decimal // 2
-    return binario    
+    return binario 
+
+# DECIMAL PARA OCTAL
+def decimal_para_octal(decimal):
+    if decimal == 0:
+        return '0'
+    octal = ''
+    while decimal > 0:
+        resto = decimal % 8
+        octal = str(resto) + octal
+        decimal = decimal // 8
+    return octal  
+
+# BINÁRIO PARA DECIMAL 11001
+def binario_para_decimal(binario):
+    decimal = 0
+    expoente = 0
+    for bit in reversed(binario):
+        decimal += int(bit) * (2 ** expoente)
+        expoente += 1 
+    return decimal    
+             
 
 while escolha > 0:
     
@@ -40,9 +61,13 @@ while escolha > 0:
         escolha = 0
     elif escolha == 3:
         print("----DECIMAL PARA OCTADECIMAL----")
+        octal = decimal_para_octal(numero)
+        print("O valor ", numero, "convertido para octadecimal é: ",octal)
         escolha = 0
     elif escolha == 4:
         print("----BINÁRIO PARA DECIMAL----")
+        decimal = binario_para_decimal(str(numero))
+        print("O valor ", numero," convertido para decimal é: ", decimal)
         escolha = 0
     elif escolha == 5:
         print("----HEXADECIMAL PARA DECIMAL----")
