@@ -1,0 +1,24 @@
+p{
+    font-size: 30px;
+    color: cadetblue;
+}
+h1{
+    color: rgb(37, 38, 61);
+    background-color: rgb(199, 197, 174);
+}
+body{
+    background-image: url("../imgs/lucasefabuloso.jpg");
+    background-repeat: no-repeat;
+    background-position: center center; 
+
+}
+#testeimg{
+    position: absolute;
+    left: 30%;
+    top: 50;
+    margin-left: 137px;
+    margin-top: 50px;
+}
+.texto{
+
+}
