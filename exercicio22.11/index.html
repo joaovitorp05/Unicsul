@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Camisas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/shirt.png" type="image/png">
+<body>
+    <div class="container">
+        <h1>Escolha a camisa de seu time!</h1>
+
+        <label for="time">Digite o nome de seu time:</label>
+        <input type="text" id="time" placeholder="Exemplo: São Paulo ">
+        <button onclick="trocarImagem()">Exibir</button>
+
+        <div id="imagem-container">
+            <img id="imagem" src="img/logocamisas.jpg" alt="Imagem da camisa do time selecionado">
+        </div>
+
+        <p id="mensagem"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
