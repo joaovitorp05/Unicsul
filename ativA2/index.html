@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarroNovo - Loja de Automóveis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Loja CarroNovo</h1>
+        <h2>Escolha seu carro e a forma de pagamento</h2>
+
+        <label for="carro">Escolha o carro:</label>
+        <select id="carro">
+            <option value="fiatUno">Fiat Uno - R$ 15.000</option>
+            <option value="vwGol">VW Gol - R$ 20.000</option>
+            <option value="fordKa">Ford KA - R$ 25.000</option>
+        </select>
+
+        <h3>Escolha a forma de pagamento:</h3>
+        <label>
+            <input type="radio" name="pagamento" value="avista" checked> À vista (20% de desconto)
+        </label>
+        <label>
+            <input type="radio" name="pagamento" value="parcelado3x"> Parcelado em 3X (sem desconto)
+        </label>
+        <label>
+            <input type="radio" name="pagamento" value="parcelado12x"> Parcelado em 12X (20% de acréscimo)
+        </label>
+
+        <button onclick="calcularValor()">Calcular Valor</button>
+
+        <div id="resultado">
+            <h3>Resultado:</h3>
+            <p id="carroEscolhido"></p>
+            <p id="valorInicial"></p>
+            <p id="valorFinal"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
